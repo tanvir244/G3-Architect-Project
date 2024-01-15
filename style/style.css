@@ -168,6 +168,18 @@ main {
     margin: auto;
 }
 
+/* footer section */
+.footer {
+    padding: 50px;
+}
+.footer-container {
+    border-radius: 8px;
+    background: #FFF4E7;
+    padding: 10px 300px;
+    text-align: center;
+}
+
+
 /* responsive */
 /* header */
 /* mobile devices */
@@ -245,5 +257,20 @@ main {
     .sponsors-img {
         grid-template-columns: 1fr;
         text-align: center;
+    }
+}
+
+/* footer section */
+@media screen and (max-width: 576px) {
+    .footer {
+        padding: 15px;
+    }
+    .footer-container {
+        padding: 5px;
+    }
+}
+@media screen and (min-width: 576px) and (max-width: 960px) {
+    .footer-container {
+        padding: 15px 70px;
     }
 }
