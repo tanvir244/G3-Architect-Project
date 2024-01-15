@@ -108,6 +108,68 @@ main {
     margin-bottom: 30px;
 }
 
+/* feature section  */
+.feature {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 50px;
+    grid-gap: 30px;
+}
+.feature-content h3 {
+    width: 380px;
+    margin-bottom: 0px;
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+}
+.feature-content > p {
+    width: 350px;
+}
+.feature-card-container {
+    margin-top: 20px;
+}
+.feature-card-container .card {
+    width: 520px;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+.feature-card-container .card h4 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 0px;
+}
+.feature-card-container .card p, .feature-content p {
+    line-height: 26px;
+}
+.feature-img {
+    position: relative;
+}
+.feature-img img {
+    width: 100%;
+}
+.feature-img .ten-years-badge {
+    position: absolute;
+    bottom: 3%;
+    left: -5%;
+}
+.feature-img .ten-years-badge {
+    width: 300px;
+    background-color: #FF900E;
+    color: #FFF;
+    padding: 46px;
+    text-align: center;
+    border-radius: 8px;
+}
+.feature-img .ten-years-badge h2 {
+    font-size: 4rem;
+    font-weight: 700;
+    margin: 0;
+}
+.feature-img .ten-years-badge p {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
 /* facts section */
 .facts {
     padding: 50px;
@@ -229,6 +291,31 @@ main {
     .teams-content {
         width: 100%;
         padding-left: 0px;
+    }
+}
+/* feature section */
+@media screen and (max-width: 576px) {
+    .feature {
+        padding: 50px 10px;
+        grid-template-columns: 1fr;
+    }
+    .feature h3 {
+        width: 315px;
+    }
+    .feature > p {
+        width: 315px;
+    }
+    .feature-card-container .card {
+        width: 300px;
+    }
+    .feature-img {
+        text-align: center;
+    }
+    .feature-img .ten-years-badge {
+        position: initial;
+        width: 72%;
+        margin: auto;
+        margin-top: 10px;
     }
 }
 
